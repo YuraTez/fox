@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=011b0e07-2c77-4c09-a453-1da88801578b&amp;lang=ru_RU"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Оформление заказа
+    </title>
+    <link rel="stylesheet" href="css/main.css?v=1607959798403">
+  </head>
+  <body>
+    <div class="page">
+            <header class="header header--white">
+              <div class="wrapper wrapper--line">
+                <div class="header__part">
+                  <div class="header__column"><a class="logo" href="index.html"><img class="logo-white" src="images/logo-white.svg" alt="logo"><img class="logo-dark" src="images/logo.svg" alt="logo"></a>
+                    <div class="header-lang"><a class="link link--default active" href="#">Рус</a><a class="link link--default" href="#">Eng</a></div>
+                  </div>
+                  <div class="header__column header__column--menu">
+                    <div class="btn btn--bor-white btn--small header-btn-menu js-open-menu">
+                      <div class="header-btn-menu__data">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#burger"></use>
+                        </svg><span>Меню</span>
+                      </div>
+                      <div class="header-btn-menu__data hide">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#close-orange"></use>
+                        </svg><span>Закрыть</span>
+                      </div>
+                    </div>
+                    <nav class="nav js-nav">
+                      <ul class="nav-list">
+                        <li class="nav-item"><a class="link link--default" href="#">Размещение</a></li>
+                        <li class="nav-item"><a class="link link--default" href="#">Стрельба</a></li>
+                        <li class="nav-item"><a class="link link--default" href="#">Развлечения</a></li>
+                        <li class="nav-item"><a class="link link--default" href="#">Мероприятия</a></li>
+                        <li class="nav-item"><a class="link link--default" href="#">Контакты</a></li>
+                      </ul>
+                    </nav>
+                    <div class="header-search">
+                      <form name="search-from" action="">
+                        <label class="form-field">
+                          <input class="form-field__input form-field__input--gray" name="search" type="search" placeholder="Поиск по сайту" required>
+                        </label>
+                        <button class="header-icon header-icon--search" type="submit">
+                          <svg>
+                            <use xlink:href="images/sprites.svg#search"></use>
+                          </svg>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="header__column header__column--btn"><a class="header-icon header-icon--lk" href="#">
+                      <svg>
+                        <use xlink:href="images/sprites.svg#person"></use>
+                      </svg></a><a class="btn btn--small" href="#">Забронировать</a></div>
+                </div>
+              </div>
+              <div class="menu js-menu">
+                <div class="wrapper wrapper--medium"> 
+                  <div class="header-search">
+                    <form name="search-from" action="">
+                      <label class="form-field">
+                        <input class="form-field__input form-field__input--gray" name="search" type="search" placeholder="Поиск по сайту" required>
+                      </label>
+                      <button class="header-icon header-icon--search" type="submit">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#search"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="menu__list">
+                    <div class="menu__column">
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Размещение</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Бумеранг</a></li>
+                          <li><a class="link link--default" href="#">Коттеджи</a></li>
+                          <li><a class="link link--default" href="#">FOX-INN</a></li>
+                          <li><a class="link link--default" href="#">Лоджи Highlands</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Рестораны</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">RED DEER</a></li>
+                          <li><a class="link link--default" href="#">СПА-Кафе</a></li>
+                          <li><a class="link link--default" href="#">Барбекю</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="menu__column">
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Стрельба</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Стрельба по тарелочкам</a></li>
+                          <li><a class="link link--default" href="#">Пулевая стрельба</a></li>
+                          <li><a class="link link--default" href="#">Оружейная мастерская</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Foxland SPA</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Услуги SPA</a></li>
+                          <li><a class="link link--default" href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="menu__column">
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Развлечения</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Спортивные площадки</a></li>
+                          <li><a class="link link--default" href="#">Фитнес</a></li>
+                          <li><a class="link link--default" href="#">Ледовая Арена</a></li>
+                          <li><a class="link link--default" href="#">Прокат инвентаря</a></li>
+                          <li><a class="link link--default" href="#">Спортивные маршруты</a></li>
+                          <li><a class="link link--default" href="#">Рыбалка</a></li>
+                          <li><a class="link link--default" href="#">Детские площадки</a></li>
+                          <li><a class="link link--default" href="#">Гольф-симулятор</a></li>
+                          <li><a class="link link--default" href="#">Виртуальный тир</a></li>
+                          <li><a class="link link--default" href="#">Бильярд</a></li>
+                          <li><a class="link link--default" href="#">Боулинг</a></li>
+                          <li><a class="link link--default" href="#">Караоке</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="menu__column">
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Мероприятия</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Корпоративные мероприятия</a></li>
+                          <li><a class="link link--default" href="#">Частные мероприятия</a></li>
+                          <li><a class="link link--default" href="#">Для Event-агентств</a></li>
+                          <li><a class="link link--default" href="#">Календарь мероприятий</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Лисья нора</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">О нас</a></li>
+                          <li><a class="link link--default" href="#">Клубные и подарочные карты</a></li>
+                          <li><a class="link link--default" href="#">Новости</a></li>
+                          <li><a class="link link--default" href="#">Документы</a></li>
+                          <li><a class="link link--default" href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+      <main class="main" id="main">
+        <div class="main-top">
+          <div class="main-top">
+            <section class="contacts-block">
+              <div class="wrapper">
+                <h2 class="contacts-block__main-title">Контакты</h2>
+                <section class="contacts-block__contacts-wrapper">
+                  <div class="contacts-block__block contacts-block__block--address"><span class="contacts-block__title">Адрес места нахождения:</span><span class="contacts-block__text">Московская область, Дмитровский район, с. Игнатово, вл. 404</span></div>
+                  <div class="contacts-block__block-wrapper">
+                    <div class="contacts-block__block contacts-block__block--tel"><span class="contacts-block__title">Оставить сообщение:</span><span class="contacts-block__text">+7 (495) 120-92-29</span></div>
+                    <div class="contacts-block__block contacts-block__block--mail"><span class="contacts-block__title">Написать на e-mail:</span><span class="contacts-block__text">reception@foxlodge.ru</span></div>
+                  </div>
+                  <div class="contacts-block__block contacts-block__block--time"><span class="contacts-block__title">Режим работы:</span><span class="contacts-block__text">с 10:00 до 22:00</span></div>
+                </section>
+                <section class="contacts-block__transport-wrapper">
+                  <div class="contacts-block__transport js-route-btn" data-type="car">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#cont_car"></use>
+                    </svg>
+                    <p class="contacts-block__transport-text">На автомобиле</p>
+                  </div>
+                  <div class="contacts-block__transport js-route-btn js-transport-active" data-type="walking">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#cont_bus"></use>
+                    </svg>
+                    <p class="contacts-block__transport-text">Общественным транспортом</p>
+                  </div>
+                  <div class="contacts-block__transport js-route-btn" data-type="car">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#cont_helic"></use>
+                    </svg>
+                    <p class="contacts-block__transport-text">На вертолете</p>
+                  </div>
+                  <div class="contacts-block__transport contacts-block__transport--invis js-route-btn" data-type="car">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#cont_airplane"></use>
+                    </svg>
+                    <p class="contacts-block__transport-text">На легкомоторном самолете</p>
+                  </div>
+                  <div class="contacts-block__transport contacts-block__transport--invis js-route-btn" data-type="parking">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#cont_yacht"></use>
+                    </svg>
+                    <p class="contacts-block__transport-text">На яхте</p>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+          <section class="contacts-block__map">
+            <div class="map contacts-block__map-wrapper" id="map"></div>
+            <div class="contacts-block__form-contacts form-contacts">
+              <p class="form-contacts__title">Добраться на автомобиле</p>
+              <p class="form-contacts__title js-text-active">Общественным транспортом</p>
+              <p class="form-contacts__title">Добраться на вертолете</p>
+              <p class="form-contacts__title">На легкомоторном самолете</p>
+              <p class="form-contacts__title">Добраться на яхте</p>
+              <form class="form-contacts__form js-search-block">
+                <div class="form-row form-contacts__row">
+                  <div class="form-col form-col--contacts">
+                    <label class="form-field">
+                      <input class="form-field__input js-search-field" placeholder="Москва"><span class="form-field__label">Откуда вы выдвигаетесь</span><span class="form-field__icon"></span>
+                    </label>
+                  </div>
+                  <button class="submit form-contacts__btn js-search-button" type="submit">
+                    <svg>
+                      <use xlink:href="images/sprites.svg#arrowcard"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <div class="form-contacts__text-wrapper">
+                <p class="form-contacts__text">Вы двигаетесь из Москвы по Дмитровскому шоссе в сторону области, проезжаете Икшу и поворачиваете направо – указатели «ЛИСЬЯ НОРА», «г. ЯРОСЛАВЛЬ».</p>
+                <p class="form-contacts__text">Переезжаете по мосту через канал имени Москвы и поворачиваете на первом Т-образном перекрёстке направо, следуя указателю «ЛИСЬЯ НОРА», проезжаете 3 км прямо и затем поворачиваете налево напротив картодрома.</p>
+                <p class="form-contacts__text">Путь от Москвы до «Лисьей норы» занимает приблизительно 40 минут (без учёта пробок).</p>
+              </div>
+              <div class="form-contacts__text-wrapper js-text-active">
+                <p class="form-contacts__text">От Савёловского ж/д вокзала следует проехать до станции Икша. Выйдя из вагона, идти в сторону г. Дмитрова (из Москвы) до конца перрона. Сойдя с перрона, повернуть направо и двигаться в сторону мостика через небольшую речку до канала им. Москвы (100 м).</p>
+                <p class="form-contacts__text">Перед каналом повернуть направо и идти в сторону шлюза, который необходимо перейти. После шлюза повернуть направо и идти в сторону холма с лестницей.</p>
+                <p class="form-contacts__text">Поднявшись по лестнице, с левой стороны вы увидите картодром «Маяк». Пройти ещё 200 метров, и перейдя дорогу, идти ещё около 1,5 км по асфальтированной дороге до КПП «Лисья нора».</p>
+              </div>
+              <div class="form-contacts__text-wrapper">
+                <p class="form-contacts__text">Гурбан – позывной «Фокс»<br>Частота – 119.1<br>Индекс – УУЕЯ<br>Географические координаты:<br>С 56 09.8<br>В 037 32.7<br></p>
+                <p class="form-contacts__text">Из хелипорта «Подушкино»:<br>Частота – 130.25<br>Географические координаты:<br>С 55 41.11<br>В 037 16.31<br></p>
+                <p class="form-contacts__text">Из хелипорта «Москва»:<br>Позывной «Рублево»<br>Географические координаты:<br>С 55 47.757<br>В 037 21.301<br></p>
+              </div>
+              <div class="form-contacts__text-wrapper">
+                <p class="form-contacts__text">Гурбан – позывной «Фокс»<br>Частота – 119.1<br>Индекс – УУЕЯ<br>Географические координаты:<br>С 56 09.8<br>В 037 32.7<br></p>
+                <p class="form-contacts__text">Из хелипорта «Подушкино»:<br>Частота – 130.25<br>Географические координаты:<br>С 55 41.11<br>В 037 16.31<br></p>
+                <p class="form-contacts__text">Из хелипорта «Москва»:<br>Позывной «Рублево»<br>Географические координаты:<br>С 55 47.757<br>В 037 21.301<br></p>
+              </div>
+              <div class="form-contacts__text-wrapper">
+                <p class="form-contacts__text">«Лисья нора» находится на расстоянии 1-1,5 км по суше от причала «Икша».</p>
+                <p class="form-contacts__text">Причал «Икша» расположен на 91-ом км (Икшинское водохранилище) канала имени Москвы.</p>
+                <p class="form-contacts__text">Расстояние от Северного речного вокзала г. Москвы до пристани «Икша» – 46 км.</p>
+                <p class="form-contacts__text">От причала «Икша» до «Лисьей норы» вы можете добраться на своём автомобиле или предварительно заказать трансфер у администратора «Лисьей норы».</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="wrapper wrapper--large">
+          <div class="footer__part"> 
+            <div class="footer__menu">
+              <div class="menu js-menu">
+                <div class="wrapper wrapper--medium"> 
+                  <div class="header-search">
+                    <form name="search-from" action="">
+                      <label class="form-field">
+                        <input class="form-field__input form-field__input--gray" name="search" type="search" placeholder="Поиск по сайту" required>
+                      </label>
+                      <button class="header-icon header-icon--search" type="submit">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#search"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="menu__list">
+                    <div class="menu__column">
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Размещение</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Бумеранг</a></li>
+                          <li><a class="link link--default" href="#">Коттеджи</a></li>
+                          <li><a class="link link--default" href="#">FOX-INN</a></li>
+                          <li><a class="link link--default" href="#">Лоджи Highlands</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Рестораны</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">RED DEER</a></li>
+                          <li><a class="link link--default" href="#">СПА-Кафе</a></li>
+                          <li><a class="link link--default" href="#">Барбекю</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="menu__column">
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Стрельба</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Стрельба по тарелочкам</a></li>
+                          <li><a class="link link--default" href="#">Пулевая стрельба</a></li>
+                          <li><a class="link link--default" href="#">Оружейная мастерская</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Foxland SPA</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Услуги SPA</a></li>
+                          <li><a class="link link--default" href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="menu__column">
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Развлечения</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Спортивные площадки</a></li>
+                          <li><a class="link link--default" href="#">Фитнес</a></li>
+                          <li><a class="link link--default" href="#">Ледовая Арена</a></li>
+                          <li><a class="link link--default" href="#">Прокат инвентаря</a></li>
+                          <li><a class="link link--default" href="#">Спортивные маршруты</a></li>
+                          <li><a class="link link--default" href="#">Рыбалка</a></li>
+                          <li><a class="link link--default" href="#">Детские площадки</a></li>
+                          <li><a class="link link--default" href="#">Гольф-симулятор</a></li>
+                          <li><a class="link link--default" href="#">Виртуальный тир</a></li>
+                          <li><a class="link link--default" href="#">Бильярд</a></li>
+                          <li><a class="link link--default" href="#">Боулинг</a></li>
+                          <li><a class="link link--default" href="#">Караоке</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="menu__column">
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Мероприятия</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">Корпоративные мероприятия</a></li>
+                          <li><a class="link link--default" href="#">Частные мероприятия</a></li>
+                          <li><a class="link link--default" href="#">Для Event-агентств</a></li>
+                          <li><a class="link link--default" href="#">Календарь мероприятий</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu-block js-mobile-menu"><a class="link menu-block__link-title js-mobile-menu__title" href="#">Лисья нора</a>
+                        <ul class="js-mobile-menu__list">
+                          <li><a class="link link--default" href="#">О нас</a></li>
+                          <li><a class="link link--default" href="#">Клубные и подарочные карты</a></li>
+                          <li><a class="link link--default" href="#">Новости</a></li>
+                          <li><a class="link link--default" href="#">Документы</a></li>
+                          <li><a class="link link--default" href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__block">
+              <div class="footer__data">
+                <div class="footer__coop"><small>© 2020 ООО «Лисья нора»</small><small>ОГРН 1155007000037</small></div>
+                <div class="form-mailing">
+                  <form class="js-form" name="mailing" action="#" data-thank="#popup-thank">
+                    <label class="form-field">
+                      <input class="form-field__input form-field__input--bor-orange" name="email" type="email" placeholder="Email" data-msg="Заполните поле" required>
+                    </label>
+                    <button class="form-mailing__btn" type="submit">Подписаться на новости</button>
+                  </form>
+                </div>
+                <div class="footer__links"><a class="link link--default" href="#">Правила комплекса</a><a class="link link--default" href="#">Тарифы услуг</a></div>
+              </div>
+              <div class="footer__contacts">
+                <h6 class="title-line">Контакты</h6><a class="link link--large" href="tel:+74951209229">+7 (495) 120−92−29</a>
+                <div class="soc soc--orange"><a class="soc-link" href="#">
+                    <div class="icon icon--soc icon--instagram">
+                      <svg>
+                        <use xlink:href="images/sprites.svg#instagram"></use>
+                      </svg>
+                    </div></a><a class="soc-link" href="#">
+                    <div class="icon icon--soc icon--facebbok">
+                      <svg>
+                        <use xlink:href="images/sprites.svg#facebbok"></use>
+                      </svg>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="popup js-popup" data-block="feedback">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__close js-popup-close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </div>
+            <div class="popup-block">
+              <div class="form-block" style="max-width: 730px;">
+                <h2>Пример формы обратной связи</h2>
+                <form class="form js-form" action="#" data-thank="#popup-thank">
+                  <div class="form-row">
+                    <div class="form-col">
+                      <label class="form-field">
+                        <input class="js-input form-field__input" type="text" name="name" data-msg="Заполните форму" required><span class="form-field__label">Ваше имя</span><span class="form-field__icon"></span>
+                      </label>
+                    </div>
+                    <div class="form-col">
+                      <label class="form-field">
+                        <input class="js-input js-input-mask form-field__input" type="tel" name="tel" data-mask="+7(999)999-99-99" data-msg="Заполните форму" required><span class="form-field__label">Ваш телефон</span><span class="form-field__icon"></span>
+                      </label>
+                    </div>
+                    <div class="form-col">
+                      <div class="form-field form-select">
+                        <select class="js-select" name="example" data-placeholder="Выбор значения" data-msg="Заполните форму" required>
+                          <option value=""> </option>
+                          <option value="GY">Gravity</option>
+                          <option value="ME">Mechanical</option>
+                          <option value="EL">Electronic</option>
+                          <option value="EL">Electronic</option>
+                        </select>
+                        <div class="form-field__icon"></div>
+                      </div>
+                    </div>
+                    <div class="form-line">
+                      <label class="form-field form-field-textarea">
+                        <textarea class="js-input form-field__input form-field__textarea" name="message" data-msg="Заполните форму" required></textarea><span class="form-field__label form-field__label--top">Ваше сообщение</span><span class="form-field__icon"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-bottom">
+                    <label class="form-checkbox">
+                      <input class="form-checkbox__input js-agree" type="checkbox"><span class="form-checkbox__checkmark"></span>
+                      <div class="form-checkbox__text"><small>Ознакомлен с политикой и выражаю согласие на <a href="#" target="_blank">Обработку</a> моих персональных данных. Ознакомлен с  <a href="#" target="_blank">Правилами</a> бронирования</small></div>
+                    </label>
+                    <button class="submit btn btn--red btn--large" type="submit" disabled="disabled">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="popup__layout js-popup-close"></div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-block="ajax-content">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__close js-popup-close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </div>
+            <div class="popup-unit">
+              <div class="js-ajax-wrapper"></div>
+            </div>
+          </div>
+          <div class="popup__layout js-popup-close"></div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-block="video">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__close js-popup-close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </div>
+            <iframe class="js-iframe" src="" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="popup__layout js-popup-close"></div>
+        </div>
+      </div>
+      <div class="popup-thank" id="popup-thank">
+        <div class="popup__wrapper">
+          <div class="popup-thank__content">
+            <div class="popup__close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </div>
+            <h4>Спасибо за заявку. Наши менеджеры свяжутся с вами в ближайшее время.</h4>
+          </div>
+        </div>
+      </div>
+      <script src="js/vendor.js?v=1607959798409"></script>
+      <script src="js/main.js?v=1607959798409"></script>
+    </div>
+  </body>
+</html>
